@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Introduction and header page of the website -->
+    <section class="about_header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!-- Content of the About Us page -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We're the world's largest university</h1>
+                <p>With an awe-inspiring campus sprawling across hundreds of acres, it is a testament to our unwavering
+                    commitment to fostering knowledge, innovation, and academic excellence. Boasting an impressive array
+                    of state-of-the-art facilities, our university offers a seemingly endless variety of academic
+                    programs, catering to the diverse interests and aspirations of a global student body.</p>
+                <a href=""class="hero-btn about-btn">Explore Now</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+                <div>
+                    <p>Our distinguished faculty members, renowned for their expertise in their respective fields, guide and inspire students on their educational journey, encouraging them to push boundaries and achieve greatness. The university's vibrant and inclusive community provides an immersive learning environment, where students from all corners of the world come together to exchange ideas and experiences, fostering cultural understanding and lifelong connections. With a rich history and a forward-thinking vision, our university continues to be a beacon of knowledge, innovation, and progress, shaping the leaders of tomorrow and making a profound impact on society on a global scale.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We're dedicated to give the best courses for our students with practical projects lead by the leading experts
+            in the respective fields,across the globe</p>
+        <div class="smediaicons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Alwin</p>
+        <p>Courtesy Easy Tutorials</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-260px";
+        }
+    </script>
+</body>
+
+</html>

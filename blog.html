@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Introduction and header page of the website -->
+    <section class="about_header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Blogs</h1>
+    </section>
+    <!-- Content of the Blog page -->
+    <section class="blogs">
+        <div class="row">
+            <div class="blog-left">
+                <img src="images/certificate.jpg" alt="">
+                <h2>Our Certificate & Online Programmes for 2023</h2>
+                <p> We invite you to embark on an exhilarating journey into the world of software development and
+                    innovation! Are you ready to unlock your digital potential and pave the way for a rewarding career
+                    in technology? Look no further! Our prestigious university offers a comprehensive selection of
+                    online certified software courses that will empower you to thrive in the digital landscape. From
+                    coding fundamentals to advanced software engineering techniques, we have the perfect courses to
+                    cater to your needs and aspirations. Join us as we delve into the limitless possibilities awaiting
+                    you! <br> <br> We invite you to embark on an exhilarating journey into the world of software
+                    development
+                    and innovation! Are you ready to unlock your digital potential and pave the way for a rewarding
+                    career in technology? Look no further! Our prestigious university offers a comprehensive selection
+                    of online certified software courses that will empower you to thrive in the digital landscape. From
+                    coding fundamentals to advanced software engineering techniques, we have the perfect courses to
+                    cater to your needs and aspirations. Join us as we delve into the limitless possibilities awaiting
+                    you! <br><br>Immerse yourself in a transformative learning experience with our online certified
+                    software courses. Learn from industry experts who bring their real-world experience and insights to
+                    the virtual classroom. They will guide you through practical projects, provide personalized
+                    feedback, and instill the confidence to tackle real-world software challenges. With flexible
+                    learning options, you have the freedom to study at your own pace, from anywhere in the world. And
+                    upon completion, earn a globally recognized certification that opens doors to exciting career
+                    opportunities. Take the first step towards a successful future in software development – enroll in
+                    our online certified software courses and unlock your digital potential today.
+                </p>
+                <div class="comment-box">
+                    <h3>Leave your thoughts here</h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter your name">
+                        <input type="mail" placeholder="Enter your mail id">
+                        <textarea rows="5" placeholder="Your comment"></textarea>
+                        <button type="submit" class="hero-btn about-btn">Post</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Post Categories</h3>
+                <div>
+                    <span>Businees Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>32</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Data Structure & Algorithms</span>
+                    <span>29</span>
+                </div>
+                <div>
+                    <span>Web Development & Frameworks</span>
+                    <span>53</span>
+                </div>
+                <div>
+                    <span>Virtual Reality</span>
+                    <span>29</span>
+                </div>
+                <div>
+                    <button class="hero-btn about-btn">Explore More</button>
+                </div>
+                <div class="subscribe-box">
+                    <h4>Subscribe to our Newsletter</h4>
+                    <form action="" class="subscribe-form">
+                        <input type="mail" placeholder="Enter your mail id">
+                        <p>Topics to be include in your Newsletter</p>
+                        <div class="sub-items">
+                            <p>Web Development</p>
+                            <label>
+                                <input type="checkbox" checked="checked" name="" id="">
+                            </label>
+                        </div>
+                        <div class="sub-items">
+                            <p>Artificial Intelligence</p>
+                            <label>
+                                <input type="checkbox" checked="checked" name="" id="">
+                            </label>
+                        </div>
+                        <div class="sub-items">
+                            <p>Machine Learning & Deep Learning</p>
+                            <label>
+                                <input type="checkbox" checked="checked" name="" id="">
+                            </label>
+                        </div>
+                        <div class="sub-items">
+                            <p>Moblie Application Development</p>
+                            <label>
+                                <input type="checkbox" checked="checked" name="" id="">
+                            </label>
+                        </div>
+                        <textarea rows="5" placeholder="Your desired topics"></textarea>
+                        <button type="submit" class="hero-btn about-btn">Subscribe Now</button>
+                    </form>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We're dedicated to give the best courses for our students with practical projects lead by the leading experts
+            in the respective fields,across the globe</p>
+        <div class="smediaicons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Alwin</p>
+        <p>Courtesy Easy Tutorials</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-260px";
+        }
+    </script>
+</body>
+
+</html>

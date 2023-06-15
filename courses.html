@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Introduction and header page of the website -->
+    <section class="about_header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSES</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+    <!-- Content of the courses page -->
+    <!-- Course Display section of the website -->
+    <section class="courses">
+        <h1>Courses We Offer</h1>
+        <p>We offer all the software courses that you're looking for, from beginner level to a professional level</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Beginner</h3>
+                <p>We give all the essential courses for the beginners to start their your journey with confidence in
+                    the IT
+                    industry</p>
+            </div>
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>We can help you to boost your career growth as an intermediate by providing all the essential courses
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Advanced</h3>
+                <p>Look at all the advanced courses that will take you ahead of your peers in the IT industry</p>
+            </div>
+            <div class="course-col">
+                <h3>Professional</h3>
+                <p>Be a professional in terms of skills in the IT industry by taking our professional courses</p>
+            </div>
+        </div>
+    </section>
+    <!-- Section of the page showing the facilities -->
+    <section class="facilities">
+        <h1>What more we offer for our students</h1>
+        <p>We offer the best facilities for our students aiming to improve their studies and other extra-curicullar
+            activies</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>We have the best library across our campuses having all the books relevant for their studies.And we
+                    provide all the other kind of books including novels,travelogues and so on</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="">
+                <h3>Largest Playground</h3>
+                <p>We have the best and largest playground including basketball court,football and soccer grounds and
+                    all the other sport related grounds and equipments</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>We provide our students the best possible diet through our cafeterias across our campuses</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We're dedicated to give the best courses for our students with practical projects lead by the leading experts
+            in the respective fields,across the globe</p>
+        <div class="smediaicons">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Alwin</p>
+        <p>Courtesy Easy Tutorials</p>
+    </section>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-260px";
+        }
+    </script>
+</body>
+
+</html>
